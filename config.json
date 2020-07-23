@@ -1,0 +1,16 @@
+{
+    "database": "root:123456@tcp(127.0.0.1:3306)/test",
+    "datatable": "capture",
+    "ignoreHost": [".google.com", ".apple.com"],
+    "ignoreTypes": [
+        "image/", 
+        "video/", 
+        "text/css", 
+        "application/javascript", 
+        "application/x-javascript",
+        "application/msword",
+        "application/vnd.ms-excel",
+        "application/vnd.ms-powerpoint",
+        "application/x-ms-wmd",
+        "application/x-shockwave-flash"]
+}
