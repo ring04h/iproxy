@@ -1,5 +1,7 @@
 # iproxy
-HTTP/HTTPS proxy server by golang [high performance version]
+HTTP/HTTPS proxy server by golang [high performance version]    
+    
+采集HTTP/HTTPS的代理流量，存储到数据库，为被动扫描提供攻击面信息
 
 ## 快速上手
 
