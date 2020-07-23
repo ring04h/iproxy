@@ -27,11 +27,12 @@ $ ./iproxy_darwin_amd64 -t 1024
 -t 可以为每一个扫描任务指定一个id，来区分不同的任务
 
 ```bash
-./iproxy_darwin_amd64 -t 1024
+./iproxy_darwin_amd64 -p 8080 -t 1024
 ```
 
 ```
-./iproxy_darwin_amd64 -hUsage of ./iproxy_darwin_amd64:
+./iproxy_darwin_amd64 -h
+Usage of ./iproxy_darwin_amd64:
   -c string
     	config file name (default "config.json")
   -l string
