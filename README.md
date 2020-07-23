@@ -1,6 +1,13 @@
 # iproxy
 HTTP/HTTPS proxy server by golang [high performance version]
 
+## 快速上手
+
+```bash
+$ ./iproxy_darwin_amd64 -t 1024
+2020/07/23 13:42:07 Server running: 0.0.0.0:8080 , task_id: 1024
+```
+
 ## 编辑 config.json
 ```json
 
@@ -72,7 +79,6 @@ CREATE TABLE IF NOT EXISTS `capture` (
 ) ENGINE=InnoDB AUTO_INCREMENT=0;
 ```
 
-## 结构展示
 
 
 
