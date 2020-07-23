@@ -11,16 +11,12 @@ $ ./iproxy_darwin_amd64 -t 1024
 ```
 
 ## 编辑 config.json
-```json
 
-// host 代理监听 IP
-// port 代理监听 端口
+```json
 // database   数据库连接信息
 // datatable  数据存储的表
 
-{
-    "host": "0.0.0.0", 
-    "port": "8080",    
+{  
     "database": "root:123456@tcp(localhost:3306)/test", 
     "datatable": "capture",
 }
@@ -35,12 +31,20 @@ $ ./iproxy_darwin_amd64 -t 1024
 ```
 
 ```
-./iproxy_darwin_amd64 -h
-Usage of ./iproxy_darwin_amd64:
+./iproxy_darwin_amd64 -hUsage of ./iproxy_darwin_amd64:
+  -c string
+    	config file name (default "config.json")
+  -l string
+    	proxy server bind local IP (default "0.0.0.0")
+  -p string
+    	proxy server port (default "8080")
   -t int
     	inspector task (task_id)
   -v	should every proxy request be logged to stdout
 ```
+
+## HTTPS 流量记录
+需要导入根证书到系统，并设置信任 ca.pem
 
 ## 安装mysql环境
 
