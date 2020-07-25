@@ -5,7 +5,7 @@
     "ignoreTypes": [
         "image/", 
         "video/", 
-        "audio/"
+        "audio/",
         "text/css", 
         "application/javascript", 
         "application/x-javascript",
