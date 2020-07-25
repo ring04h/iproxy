@@ -13,8 +13,14 @@ $ ./iproxy_darwin_amd64 -t 1024
 ## 编辑 config.json
 
 ```json
+
 // database   数据库连接信息
 // datatable  数据存储的表
+// ignoreHost   排除特定主机，不存储到数据库，支持子域名 mail.google.com .weixin.qq.com
+// ignoreTypes  排除特定资源类型，参考各httpd服务的配置
+
+// mime-types
+// https://www.nginx.com/resources/wiki/start/topics/examples/full/#mime-types
 
 {  
     "database": "root:123456@tcp(localhost:3306)/test", 
